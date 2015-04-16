@@ -1,0 +1,17 @@
+<div class="cols-xs-10 shifter">
+	<h2>Nelisa Purchase History</h2>
+	<table class="table table-striped table-bordered">
+		<thead>
+			<tr>
+				<th>Shop</th>Date<th>Item</th><th>Quantity</th><th>Cost</th><th>Total Cost</th>
+			</tr>
+		</thead>
+			{{#purchase_history}}
+			<tr>
+				<td>{{Shop}}</td><td>{{Date}}</td>
+				<td>{{Item}}</td><td>{{Quantity}}</td>
+				<td>{{Cost}}</td><td>{{Total_cost}}</td>
+			</tr>
+			{{/purchase_history}}
+		</table>
+</div>
