@@ -1,0 +1,19 @@
+<div class="cols-xs-10 shifter">
+
+	<h2>Delete</h2>
+	{{products}}
+
+	<table class="table table-striped table-bordered">
+		{{#each products}}
+			<tr>
+				<td>{{prod_id}}</td>
+		<form action="/products/delete/{{prod_id}}" method="GET">
+		Stock_item: <input type="prod_id" name="stock_item">	
+		<input type="Delete">
+	</form>
+				
+			</tr>
+		{{/each}}
+
+	</table>
+</div>

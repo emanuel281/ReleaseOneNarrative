@@ -1,0 +1,11 @@
+<div id="add-products">
+	
+<h1>Add</h1>
+
+{{#products}}
+<form action="/products/update/{{id}}" method="POST">
+	Item: <input type="text" name="prod_name" value="{{stock_item}}">	
+	<input type="submit">
+</form>
+{{/products}}
+</div>

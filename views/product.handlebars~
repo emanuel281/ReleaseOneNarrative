@@ -8,7 +8,7 @@
 		</thead>
 			{{#products}}
 			<tr>
-				<td>{{prod_id}}</td><td>{{date}}</td><td>{{stock_item}}</td>
+				<td>{{date}}</td><td>{{stock_item}}</td>
 				<td>{{No_sold}}</td><td>{{Sales_Price}}</td>
 			</tr>
 			{{/products}}

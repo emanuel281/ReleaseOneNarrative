@@ -8,6 +8,11 @@ var exphbs = require("express-handlebars")
     categories = require('./routes/products'),
     purchase_history = require('./routes/products'),
     suppliers = require('./routes/products');
+    popu_products = require('./routes/products');
+    popu_categories = require('./routes/products');
+    price_cost = require('./routes/products');
+    prod_earnings = require('./routes/products');
+    //prod_delete = require('./routes/products');
 
 var app = express();
 
@@ -39,11 +44,18 @@ app.get('/products', products.show);
 app.get('/categories', categories.show_cat);
 app.get('/purchase_history', purchase_history.show_purchase_hist);
 app.get('/suppliers', suppliers.show_sup);
-//app.get('/products/edit/:id', products.get);
-//app.post('/products/update/:id', products.update);
-//app.post('/products/add', products.add);
+app.get('/popular_producct', popu_products.show_popular_products);
+app.get('/popular_category', popu_categories.show_popular_cat);
+app.get('/price_and_cost', price_cost.show_products_price_cost);
+app.get('/product_earning', prod_earnings.show_product_earnings);
+
+app.get('/products', products.show_home);
+app.get('/products/edit/:id', products.get);
+app.post('/update/:id', products.update);
+app.post('/products/add', products.add);
 //this should be a post but this is only an illustration of CRUD - not on good practices
-//app.get('/products/delete/:id', products.delete);
+app.post('/products/delete/:id', products.delete);
+//app.get('productDelete', prod_delete.delete);
 
 app.get("/", function(req, res){
 	res.render("home")

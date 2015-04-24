@@ -1,0 +1,15 @@
+<div class="cols-xs-10 shifter">
+	<h2>Nelisa Popular Products</h2>
+	<table class="table table-striped table-bordered">
+		<thead>
+			<tr>
+				<th>product_id</th><th>product_name</th><th>Number Sold</th>
+		</thead>
+			{{#popular_products}}
+			<tr>
+				<td>{{prod_id}}</td><td>{{prod_name}}</td>
+				<td>{{no_sold}}</td>
+			</tr>
+			{{/popular_products}}
+		</table>
+</div>
