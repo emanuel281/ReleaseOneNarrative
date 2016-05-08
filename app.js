@@ -22,6 +22,8 @@ var connectionProvider = require('./routes/connectionProvider'),
     SuppliersDataService = require('./dataServices/suppliersData'),
     app = express();
 
+    app.use(express.static('public'));
+
 var dbOptions = {
       host: 'localhost',
       user: 'root',
@@ -59,7 +61,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.use(session({secret: "yada yada", saveUninitialized : false, resave: true, cookie : {maxAge : 5*60000}}));
-app.set("x-bowered-by", false)
+app.set("x-powered-by", false)
 
 // var auth = new auth()
 app.get("/", auth.checkUser, function(req, res){
@@ -177,7 +179,8 @@ app.post('/all_suppliers/update_all_suppliers/:id', auth.checkUser, tables_setti
 app.get('/all_suppliers/delete_all_suppliers/:id', auth.checkUser, tables_settings.delete_all_suppliers);
 
 app.get("/*", auth.checkUser, function(req, res){
-  res.redirect("/login");
+  // res.redirect("/login");
+  res.redirect("/");
 });
 
 var port = process.env.PORT || 5000;
