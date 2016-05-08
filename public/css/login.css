@@ -1,7 +1,7 @@
 body {
   padding-top: 120px;
   padding-bottom: 40px;
-  background-color: #eee;
+  background-color: #FCEBB6;
 }
  .btn 
  {
@@ -12,6 +12,7 @@ body {
   border-left:none;
   border-right:none;
   box-shadow:inset 2px -3px rgba(0,0,0,0.15);
+  background-color: #F07818;
  }
  .btn:focus
  {
@@ -27,7 +28,7 @@ body {
    left: 0;
    background-size: cover;
    background-position: 50% 50%;
-   background-image: url('/images/color-splash.jpg');
+   /*background-image: url('/images/color-splash.jpg');*/
    background-repeat:repeat;
  }
  .form-signin {
@@ -73,7 +74,7 @@ body {
    border-top:1px solid rgba(0,0,0,0.08);
  }
  .form-signin-heading {
-   color: #fff;
+   color: 0;
    text-align: center;
    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
  }
@@ -86,7 +87,7 @@ body {
   text-align: center;
   font: 4em Courier, "Comic Sans MS", Georgia, sans-serif;
   font-weight: bolder;
-  border-bottom: 5px white solid;
+  border-bottom: 5px #F07818 solid;
  }
 .main-container {
   padding:0 0 70em 0;

@@ -66,7 +66,7 @@ app.set("x-powered-by", false)
 // var auth = new auth()
 app.get("/", auth.checkUser, function(req, res){
 
-  res.render("home", {administrator : administrator})
+  res.redirect("/sales_history");
 })
 
 app.get("/login", function(req, res){
