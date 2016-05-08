@@ -16,12 +16,9 @@ h1 {
 	font-weight: bolder;
 }
 
-/*h3 {
-	text-align: center;
-	padding: 5em 0 0 0;
-	margin: 0;
-	padding-top: 5em 
-}*/
+body { 
+	background-color: #FCEBB6;
+ }
 
 h2 {
 	text-align: center;
@@ -32,12 +29,15 @@ h2 {
 	position: relative;
 	padding: 0;
 	margin: 0;
-
 }
 
 .main-container {
 	padding:0 0 5em 0;
 	margin: 0 auto;
+}
+
+.navbar-default {
+	background-color: #F0A830;
 }
 
 .row > button {
@@ -60,7 +60,7 @@ footer {
 	margin: 0 0 20em 0;
 	color: white;
 	font-weight: bolder;
-	background-color: rgba(100, 10, 40, 200);
+	background-color: #F0A830;
 	border: 2px solid black;
 }
 

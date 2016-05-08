@@ -40,10 +40,7 @@ this.authUser = function(inputData, cb){
 
     var sql = 'UPDATE users SET locked = ? WHERE username = ?';
     postData(sql, inputData.username, cb)
-    }
-
-
-	 
+    }	 
 	};
 
 this.lock = function(inputData, cb){
