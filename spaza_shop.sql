@@ -19,7 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `spaza_shop`
 --
-
+CREATE DATABASE IF NOT EXISTS `spaza_shop`;
+USE `spaza_shop`;
 -- --------------------------------------------------------
 
 --
