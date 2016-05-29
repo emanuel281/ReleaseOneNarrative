@@ -17,7 +17,7 @@ h1 {
 }
 
 body { 
-	background-color: #FCEBB6;
+	background-color: #FFF;
  }
 
 h2 {
@@ -78,4 +78,8 @@ footer {
 
 tr > td {
 	width: 33%;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
 }
